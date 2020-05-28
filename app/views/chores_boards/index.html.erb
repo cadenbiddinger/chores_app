@@ -1,0 +1,8 @@
+<h1>All Chores</h1>
+<% @chores_boards.each do |chores_board| %>
+  <h1><%= chores_board.name %></h1>
+  <%= chores_board.name %>
+  <%= link_to "Show", chores_board_path(chores_board) %>
+<% end %>
+<br />
+<%= link_to "New Chore", new_list_name_path %>

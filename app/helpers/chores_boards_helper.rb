@@ -1,0 +1,2 @@
+module ChoresBoardsHelper
+end

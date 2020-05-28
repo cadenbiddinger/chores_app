@@ -1,0 +1,11 @@
+<h1>Chores list</h1>
+<%= link_to 'New Chore', new_chores_board_path%>
+<hr />
+
+<% @chores_boards.each do |chores_board| %>
+        <li>
+           
+            <%= chores_board.name %> <%= link_to 'Edit this list', edit_list_names_path(chores_board) %> 
+            <%= link_to 'Delete this list', list_names_path(chores_board), method: :delete%>
+        </li>
+    <% end %>
